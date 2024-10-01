@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contactme.html">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <main>
+      <h1>Contact Me</h1>
+      <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15548.831519826092!2d77.6948888846375!3d13.022430069694867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae10ffa2b8630b%3A0x3fa1ba66795b639e!2sK.k%20Store!5e0!3m2!1sen!2sin!4v1727693851246!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
+      <section class="contact-info">
+        <dl>
+            <button><dt>Call me</dt>
+            <dt><a href="tel:+916360652503" alt="Call me">+91 63606 52503</a></dt></button>
+            <button><dt>Email me</dt>
+            <dt><a href="mailto:sugunak1603@gmail.com" alt="Email me">sugunak1603@gmail.com</a></dt></button>
+            <button><dt>Meet me</dt>
+            <dt>@ TC Palya</dt></button>
+        </dl>
+      </section>
+  
+      <section class="contact-form">
+        <center><h2><small>Feel Free To Message</small> <large> ME</large></h2></center>
+        <form action="contactme.html" method="GET">
+          <div class="contact-form-column">
+          <label for="name" \>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <label for="phone" \>
+          <input type="tel" id="phone" name="phone" placeholder="Your Phone" required></div>
+          <div class="contact-form-column">
+          <label for="email" \>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <label for="subject" \>
+          <input type="text" id="subject" name="subject" placeholder="Your Subject" required></div>
+          <div class="message-container" id="message-container"><label for="message" \>
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea></div>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+  
+    <footer>
+      <p>All rights reserved @ 2024</p>
+    </footer>
+  </body>
+  </html>

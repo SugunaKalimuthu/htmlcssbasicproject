@@ -1,0 +1,162 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+h1 {
+  background-color: rgb(41, 144, 41);
+  color: white;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; 
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav li:nth-child(even) a {
+  color: red;
+}
+
+nav li:nth-child(even) a:visited {
+  color: red;
+}
+
+nav li:nth-child(odd) a {
+  color: white;
+}
+
+main {
+  padding: 20px;
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #f0f0f0; 
+  color: red; 
+  padding: 20px; 
+}
+
+.contact-info button{
+  padding: 20px;
+  color:darkred;
+  font-weight: bold;
+  margin: 20px 40px 60px 20px;
+  a{
+    color:darkred
+  }
+}
+
+.contact-info {
+  background-color: white; 
+  color: white; 
+  width: 100%; 
+  padding: 40px; 
+}
+
+.map {
+  text-align: center;
+  background-color: #f0f0f0; 
+  width: 100%; 
+  height: 400px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-form {
+ width: 100%;
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 20px;
+}
+
+form{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.contact-form-column {
+display: flex;
+gap: 20px;
+}
+
+.contact-form-column input{
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.message-container{
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 150px;
+  resize: none;
+} 
+
+h2
+{
+text-align: center;
+padding: 20px;
+}
+
+textarea {
+  height: 200px; 
+}
+
+.contact-form button{ 
+grid-column: span 2;
+background-color: #f56342;
+color: white;
+padding: 15px;
+border:none ;
+border-radius: 4px;
+font-size: 16px;
+cursor: pointer;
+justify-self: start;
+max-width: 150px;
+} 
+
+button:hover{
+  background-color: #e05238;
+}
+
+footer { 
+background-color: black; 
+color: white; 
+text-align: center; 
+padding: 10px; 
+}
