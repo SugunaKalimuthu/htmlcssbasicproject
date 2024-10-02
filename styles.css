@@ -7,43 +7,56 @@ body {
 
 .my_info {
     display: flex;
-    height: 100vh; 
-    flex-direction: row;
+    justify-content: center;
     align-items: stretch; 
-    justify-content: center; 
     padding: 20px;
     gap: 20px; 
+    max-width: 85%; 
+    margin: 0 auto; 
+    flex-wrap: nowrap; 
 }
 
 .profile-pic {
-    flex: 0 0 40%; 
-    margin: 0;
-    padding: 20px;
+    flex: 0 0 30%; 
     display: flex;
-    flex-direction: column;
-    justify-content: center; 
+    align-items: center; 
+    justify-content: center;
+    padding: 0px;
 }
 
 .profile-pic img {
-    max-width: 100%; 
+    width: 100%; 
     height: auto;
-    object-fit: cover; 
+    object-fit: cover;
+    aspect-ratio: 1 / 1; 
     border-radius: 10px;
 }
 
 .about_me {
-    flex: 0 0 60%; 
-    margin: 0;
-    padding: 20px;
+    flex: 0 0 70%; 
+    background-color: lightgrey; 
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px;
+    text-align: center;
 }
 
 .about_me p {
-    flex-grow: 1; 
     margin: 0;
     padding: 0;
+    font-size: 1.2rem; 
+}
+
+@media (max-width: 768px) {
+    .my_info {
+        flex-direction: column; 
+    }
+
+    .profile-pic, .about_me {
+        flex: 0 0 auto; 
+        width: 100%; 
+    }
 }
 
 header {
@@ -52,18 +65,18 @@ header {
     padding: 10px;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
 .my-name {
     background-color: green;
     color: white;
     text-align: center;
     height: 100px;
     padding: 20px 0 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav li {
@@ -84,8 +97,10 @@ nav li:nth-child(even) a {
 }
 
 a {
-    color:white
+    color: white;
+    text-decoration: none; 
 }
+
 main {
     text-align: center;
     padding: 20px;
@@ -113,15 +128,16 @@ button {
     font-size: medium;
     margin: 20px 10px; 
     text-align: center;
-  }
-  
-  .button-container {
+}
+
+.button-container {
     display: flex; 
     justify-content: space-between; 
-  }
+}
 
 .red-line {
     background-color: rgb(234, 32, 32);
     height: 40px; 
     width: 100%;
+    align-self: center;
 }
