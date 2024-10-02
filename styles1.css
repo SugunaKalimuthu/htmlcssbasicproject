@@ -18,6 +18,9 @@ h1 {
   text-align: center;
 }
 
+a{
+  text-decoration: none;
+}
 nav ul {
   list-style: none;
   margin: 0;
@@ -47,28 +50,39 @@ main {
 }
 
 .contact-info {
-  text-align: center;
-  margin-bottom: 20px;
-  background-color: #f0f0f0; 
-  color: red; 
-  padding: 20px; 
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
 }
 
-.contact-info button{
-  padding: 20px;
-  color:darkred;
-  font-weight: bold;
-  margin: 20px 40px 60px 20px;
-  a{
-    color:darkred
+@media (max-width: 768px) {
+  .contact-info {
+      flex-direction: column; 
+  }
+
+  .contact-info{
+      flex: 0 0 auto; 
+      width: 100%; 
   }
 }
 
-.contact-info {
-  background-color: white; 
-  color: white; 
-  width: 100%; 
-  padding: 40px; 
+.contact-info button {
+  width: auto; 
+  padding: 10px; 
+  color: darkred;
+  font-weight: bold;
+  margin: 20px 10px; 
+  background-color: #f0f0f0;
+  border: 1px solid darkred; 
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px; 
+  text-align: center;
+  min-width: 200px;
+}
+
+.contact-info button a{
+  color:darkred;
 }
 
 .map {
@@ -149,6 +163,7 @@ cursor: pointer;
 justify-self: start;
 max-width: 150px;
 } 
+
 
 button:hover{
   background-color: #e05238;
